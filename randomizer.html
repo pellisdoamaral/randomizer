@@ -2,21 +2,46 @@
 <html>
 <head>
 <title>Randomizer</title>
+
+<style>
+    p {
+        white-space: pre-wrap;
+    }
+</style>
+
 </head>
 <body>
 
 <h1>Button Time</h1>
-<p>It is time....for button</p>
+<p>It is time....for buttons</p>
 
 <button type="button" onclick="buttonClick()">Click Me!</button> 
-
 <p id="test">aiyeee</p>
+
+<button type="button" onclick="printList()">print list</button>
+<p id="listSpot"></p>
+List goes above this line
 
 
 <script>
+    let x = "eyyyo"
+    let list = ["one", "two", "three"]
+
+
     function buttonClick() {
-        document.getElementById("test").innerHTML = "eyyyyo";
+        document.getElementById("test").innerHTML = x;
     }
+
+    function printList() {
+        let prettyPrint = "";
+        for (var i = 0; i <= list.length - 1; i++) {
+            prettyPrint += list[i];
+            prettyPrint += "\n";
+        }
+
+        document.getElementById("listSpot").innerHTML = prettyPrint;
+    }
+
 </script>
 
 

@@ -21,9 +21,13 @@ Nested lists, so I can choose between categories of tasks, and then choose a tas
 
 1. A button that, on being clicked, will print to the screen a random element from a (hard-coded) list of strings.
     - ~~A button that, on being clicked, prints text to the screen~~
-    - ~~A list variable
-    - ~~The list is displayed on the page
-    - ~~The list prints to the screen on button click
-    - One list item alone is displayed to the page
-    - The list item prints on button click
-    - A random list item prints on button click
+    - ~~A list variable~~
+    - ~~The list is displayed on the page~~
+    - ~~The list prints to the screen on button click~~
+    - ~~A random list item prints on button click~~
+
+2. Populate the list from a text file.
+    - Read a line from a text file
+    - Read a specific line from a text file (eg line 3)
+    - Read a random line from a text file
+    - That line is printed on button click

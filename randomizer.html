@@ -4,7 +4,7 @@
 <title>Randomizer</title>
 
 <style>
-    p {
+    .listTime {
         white-space: pre-wrap;
     }
 </style>
@@ -19,8 +19,10 @@
 <p id="test">aiyeee</p>
 
 <button type="button" onclick="printList()">print list</button>
-<p id="listSpot"></p>
-List goes above this line
+<div class="listTime" id="listSpot">listin' time</div>
+
+<button type="button" onclick="getListElement()">get one element</button>
+<div id="elementSpot"></div>
 
 
 <script>
@@ -40,6 +42,11 @@ List goes above this line
         }
 
         document.getElementById("listSpot").innerHTML = prettyPrint;
+    }
+
+    function getListElement() {
+        let index = Math.floor(Math.random() * list.length);
+        document.getElementById("elementSpot").innerHTML = list[index];
     }
 
 </script>
